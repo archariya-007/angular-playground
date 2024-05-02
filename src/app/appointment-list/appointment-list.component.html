@@ -1,1 +1,10 @@
-<p>appointment-list works!</p>
+<h1>My Dog Woof woof</h1>
+<p>
+    {{ appointment | json }}
+</p>
+
+<div>
+    <input type="text" [(ngModel)]="newApptTitle" placeholder="Appointment description">
+    <input type="date" [(ngModel)]="newApptDate">
+    <button (click)="addAppointment()">Add Appointment</button>
+</div>
